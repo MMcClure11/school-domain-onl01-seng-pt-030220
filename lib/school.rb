@@ -38,7 +38,6 @@ class School
   end
   
   def add_student(student, grade)
-    self.roster[:grade]
   end
   
 end
