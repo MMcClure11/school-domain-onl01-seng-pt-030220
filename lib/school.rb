@@ -30,15 +30,15 @@
 
 class School
   
-  attr_reader :school_name, :roster
+  attr_reader :school, :roster
   
-  def initialize(school_name)
-    @school_name = school_name
-    @roster = []
+  def initialize(school)
+    @school = school
+    @roster = {}
   end
   
-  def add_student
-    
+  def add_student(student, grade)
+    self.roster[:grade]
   end
   
 end
