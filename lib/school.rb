@@ -47,8 +47,8 @@ class School
   end
   
   def sort
-    self.roster.collect do |grade, student|
-      student.sort
+    self.roster.each do |grade, student|
+      student.sort!
     end
   end
   
