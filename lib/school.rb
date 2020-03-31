@@ -47,9 +47,11 @@ class School
   end
   
   def sort
+    sorted = {}
     self.roster.each do |grade, student|
-      student.sort!
+      sorted[grade] = student.sorted
     end
+    sorted
   end
   
 end
