@@ -42,7 +42,9 @@ class School
     self.roster[grade] << student
   end
   
-  
+  def grade(grade)
+    self.roster[grade]
+  end
   
 end
 
