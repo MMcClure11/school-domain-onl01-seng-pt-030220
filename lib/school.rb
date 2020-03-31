@@ -47,7 +47,9 @@ class School
   end
   
   def sort
-    self.roster[grade].sort!
+    self.roster.collect do |grade, student|
+      student.sort
+    end
   end
   
 end
